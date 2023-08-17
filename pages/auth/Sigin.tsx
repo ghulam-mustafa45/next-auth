@@ -38,10 +38,10 @@ if (res?.ok) {
   return (
     <>
     <form onSubmit={handleSubmit}>
-          <div className="flex flex-col items-center min-h-screen py-2  bg-gradient-to-r from-cyan-300 to-blue-700 bg-cover">
-                <img className='mt-3  w-64' src="https://me.classera.com/img/classera_logo_white.png?93c14775-d6a8-51df-97b2-7553b96c8787" alt="no image" />
+          <div className="flex flex-col items-center min-h-screen py-2  bg-gradient-to-r from-cyan-300 to-blue-700">
+                <img className='mt-4 w-64' src="https://me.classera.com/img/classera_logo_white.png?93c14775-d6a8-51df-97b2-7553b96c8787" alt="no image" />
             
-            <div className='mt-9 bg-white rounded-t-md rounded-b-md w-72 pl-9'>
+            <div className='mt-12 bg-white rounded-t-md rounded-b-md w-72 pl-9'>
                     <input className=' outline-none border-b pl-2 pt-8 pb-2 mt-4 text-sm' 
                     type="email"
                     placeholder='Login Name '
@@ -50,7 +50,7 @@ if (res?.ok) {
                     setuserInfo({...userInfo,email:target.value})
                     }
                       />
-                    <input className='outline-none border-b pt-8 pb-2 pl-2 mt-3 text-sm ' 
+                    <input className=' outline-none border-b pt-8 pb-2 pl-2 mt-3 text-sm' 
                     type="password" 
                     placeholder='passwords' 
                     value={userInfo.password}
@@ -61,8 +61,8 @@ if (res?.ok) {
              
               <a className=' text-blue-400  text-xs font-bold mt-5 inline-block ' href="#"> Forgot Password ?</a>
               
-              <button className='bg-gradient-to-r from-cyan-300  to-blue-700 mb-4 text-white font-sans  hover:opacity-80 font-medium text-lg shadow-cyan-500/50 rounded border-s mt-5 w-11/12 pr-7 pl-7 pt-2 pb-2'> LOGIN</button>
-              {<p className="text-red-500 mb-11 m-auto">{loginError}</p>}
+              <button className='bg-gradient-to-r from-cyan-300  to-blue-700 mb-5 text-white font-sans  hover:opacity-80 font-medium text-lg shadow-cyan-500/50 rounded border-s mt-5 w-11/12 pr-7 pl-7 pt-2 pb-2'> LOGIN</button>
+              {<p className="text-red-500 text-sm mb-10">{loginError}</p>}
               <p className='w-11/12 text-center border-b-2 leading-{0.1em} text-slate-500 text-xs m'><span>Or Login With</span></p><br />
             
               <div className='flex justify-center mb-16'>
@@ -76,7 +76,7 @@ if (res?.ok) {
               </div>
              
             </div>
-             <img className='mt-6 opacity-80 w-64' src="https://me.classera.com/img/learning-login.png?4b5b5048-7969-55df-afd8-97236b57e9f0" alt="no pic" />
+             <img className='mt-6 opacity-80 h-24 w-64' src="https://me.classera.com/img/learning-login.png?4b5b5048-7969-55df-afd8-97236b57e9f0" alt="no pic" />
         </div>
    </form>
    
